@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NTUT\\Game-Design\\0916\\hw1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF6D0353-7DB9-4B21-A22A-1CB6DF6F4295}|hw1\\hw1.csproj|d:\\ntut\\game-design\\0916\\hw1\\hw1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF6D0353-7DB9-4B21-A22A-1CB6DF6F4295}|hw1\\hw1.csproj|solutionrelative:hw1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NTUT\\Game-Design\\0916\\hw1\\hw1\\Program.cs",
+              "RelativeDocumentMoniker": "hw1\\Program.cs",
+              "ToolTip": "D:\\NTUT\\Game-Design\\0916\\hw1\\hw1\\Program.cs",
+              "RelativeToolTip": "hw1\\Program.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAwwAoBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T13:06:58.737Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

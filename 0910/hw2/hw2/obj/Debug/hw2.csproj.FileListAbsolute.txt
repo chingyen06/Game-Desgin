@@ -1,0 +1,14 @@
+D:\NTUT\Game-Design\0916\hw2\hw2\bin\Debug\hw2.exe.config
+D:\NTUT\Game-Design\0916\hw2\hw2\bin\Debug\hw2.exe
+D:\NTUT\Game-Design\0916\hw2\hw2\bin\Debug\hw2.pdb
+D:\NTUT\Game-Design\0916\hw2\hw2\obj\Debug\hw2.csproj.AssemblyReference.cache
+D:\NTUT\Game-Design\0916\hw2\hw2\obj\Debug\hw2.csproj.CoreCompileInputs.cache
+D:\NTUT\Game-Design\0916\hw2\hw2\obj\Debug\hw2.exe
+D:\NTUT\Game-Design\0916\hw2\hw2\obj\Debug\hw2.pdb
+D:\NTUT\Game-Design\0910\hw2\hw2\bin\Debug\hw2.exe.config
+D:\NTUT\Game-Design\0910\hw2\hw2\bin\Debug\hw2.exe
+D:\NTUT\Game-Design\0910\hw2\hw2\bin\Debug\hw2.pdb
+D:\NTUT\Game-Design\0910\hw2\hw2\obj\Debug\hw2.csproj.AssemblyReference.cache
+D:\NTUT\Game-Design\0910\hw2\hw2\obj\Debug\hw2.csproj.CoreCompileInputs.cache
+D:\NTUT\Game-Design\0910\hw2\hw2\obj\Debug\hw2.exe
+D:\NTUT\Game-Design\0910\hw2\hw2\obj\Debug\hw2.pdb
