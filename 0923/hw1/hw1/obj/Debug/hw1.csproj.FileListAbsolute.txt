@@ -1,0 +1,7 @@
+D:\NTUT\Game-Design\0923\hw1\hw1\bin\Debug\hw1.exe.config
+D:\NTUT\Game-Design\0923\hw1\hw1\bin\Debug\hw1.exe
+D:\NTUT\Game-Design\0923\hw1\hw1\bin\Debug\hw1.pdb
+D:\NTUT\Game-Design\0923\hw1\hw1\obj\Debug\hw1.csproj.AssemblyReference.cache
+D:\NTUT\Game-Design\0923\hw1\hw1\obj\Debug\hw1.csproj.CoreCompileInputs.cache
+D:\NTUT\Game-Design\0923\hw1\hw1\obj\Debug\hw1.exe
+D:\NTUT\Game-Design\0923\hw1\hw1\obj\Debug\hw1.pdb

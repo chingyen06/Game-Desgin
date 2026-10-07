@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NTUT\\Game-Design\\0930\\hw4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|d:\\ntut\\game-design\\0930\\hw4\\hw4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|solutionrelative:hw4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12979B11-6B46-4120-A1EB-54286AF1D4B2}|hw4\\hw4.csproj|D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{12979B11-6B46-4120-A1EB-54286AF1D4B2}|hw4\\hw4.csproj|solutionrelative:hw4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|d:\\ntut\\game-design\\0930\\hw4\\hw4\\resources\\poker.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|solutionrelative:hw4\\resources\\poker.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|d:\\ntut\\game-design\\0930\\hw4\\hw4\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|solutionrelative:hw4\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|d:\\ntut\\game-design\\0930\\hw4\\hw4\\hw4.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|solutionrelative:hw4\\hw4.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|d:\\ntut\\game-design\\0930\\hw4\\hw4\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A094B2FD-81AB-802D-DBCA-5FF889AB55DD}|hw4\\hw4.csproj|solutionrelative:hw4\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "poker.png",
+              "DocumentMoniker": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Resources\\poker.png",
+              "RelativeDocumentMoniker": "hw4\\Resources\\poker.png",
+              "ToolTip": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Resources\\poker.png",
+              "RelativeToolTip": "hw4\\Resources\\poker.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-10-01T12:37:56.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "hw4\\Properties\\Resources.resx",
+              "ToolTip": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Properties\\Resources.resx",
+              "RelativeToolTip": "hw4\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-10-01T12:31:24.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "hw4",
+              "DocumentMoniker": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\hw4.csproj",
+              "RelativeDocumentMoniker": "hw4\\hw4.csproj",
+              "ToolTip": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\hw4.csproj",
+              "RelativeToolTip": "hw4\\hw4.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-01T12:31:20.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "hw4\\Form1.Designer.cs",
+              "ToolTip": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Form1.Designer.cs",
+              "RelativeToolTip": "hw4\\Form1.Designer.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAASwCkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T12:29:22.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Form1.cs",
+              "RelativeDocumentMoniker": "hw4\\Form1.cs",
+              "ToolTip": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Form1.cs",
+              "RelativeToolTip": "hw4\\Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwBkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T12:27:59.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Form1.cs",
+              "RelativeDocumentMoniker": "hw4\\Form1.cs",
+              "ToolTip": "D:\\NTUT\\Game-Design\\0930\\hw4\\hw4\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "hw4\\Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T12:27:25.538Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
