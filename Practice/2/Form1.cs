@@ -31,21 +31,6 @@ namespace _2
             g.DrawImage(image, destImage, sourceImage, GraphicsUnit.Pixel);
         }
 
-        private void Form1_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                isPressed = true;
-                posx = e.X;
-                posy = e.Y;
-
-                n = (n + 1) % 13;
-
-                this.Invalidate();
-                this.Update();
-            }
-        }
-
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)

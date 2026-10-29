@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NTUT\\Game-Design\\1007\\Practice\\1\\1.csproj",
+      "projectUniqueName": "D:\\NTUT\\Game-Design\\Practice\\1\\1.csproj",
       "projectName": "1",
-      "projectPath": "D:\\NTUT\\Game-Design\\1007\\Practice\\1\\1.csproj",
+      "projectPath": "D:\\NTUT\\Game-Design\\Practice\\1\\1.csproj",
       "packagesPath": "C:\\Users\\john1\\.nuget\\packages\\",
-      "outputPath": "D:\\NTUT\\Game-Design\\1007\\Practice\\1\\obj\\",
+      "outputPath": "D:\\NTUT\\Game-Design\\Practice\\1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,7 +77,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

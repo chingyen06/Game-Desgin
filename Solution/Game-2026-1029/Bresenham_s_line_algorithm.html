@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .brown {
+        color: brown;
+    }
+    .blue {
+        color: blue;
+    }
+    .tomato {
+        color: tomato;
+    }
+    </style>
+</head>
+<body>
+<ul id="top">Functions for game programming
+    <li> <a href="#Stopwatch">Using Stopwatch</a> </li>
+    <li> <a href="#drawLine_1">draw a line with a specified color</a> </li>
+    <li> <a href="#drawLine_2">draw a line using a bitmap content</a> </li>
+    <li> <a href="#drawCircle">The Bresenham's algorithm for drawing a circle from AI</a> </li>
+    <li> <a href="#usingClass">using the Bresenham's algorithm for drawing a circle from AI</a> </li>
+    <li> <a href="#floodFill">Flood Fill function</a> </li>
+    
+</ul>
+<hr>
+
+<pre id="Stopwatch">
+<span class="blue">Using Stopwatch:</span>
+
+// 1. Create a new stopwatch instance
+Stopwatch stopwatch = new Stopwatch();
+
+
+// 2. Start the stopwatch
+stopwatch.Start();
+
+// --- Code you want to measure ---
+
+// 3. Stop the stopwatch
+stopwatch.Stop();
+
+// 4. Retrieve the elapsed time
+string result = $"Elapsed Time (ms): {stopwatch.ElapsedMilliseconds} ms";
+result += $"\nElapsed Time (Ticks): {stopwatch.ElapsedTicks} ticks";
+result += $"\nElapsed Time (Precise): {stopwatch.Elapsed}";
+
+MessageBox.Show(result);
+</pre>
+<a href="#top">go to top</a>
+
+<pre id="drawLine_1">
+//--------------------------------------------------------------------------------
+/// <span class="blue">使用 Bresenham 演算法計算兩點之間的直線像素座標</span>
+/// <param name="x0">起點 X 座標</param>
+/// <param name="y0">起點 Y 座標</param>
+/// <param name="x1">終點 X 座標</param>
+/// <param name="y1">終點 Y 座標</param>
+/// <returns>組成直線的所有座標點清單</returns>
+
+// <span class="blue">draw a line with a specified color.</span>
+public void drawLine(Control control, Color color, int x0, int y0, int x1, int y1)
+{
+    List&lt;Point> points = new List&lt;Point>();
+
+    Brush brush = new SolidBrush(color);
+
+    int dx = Math.Abs(x1 - x0);
+    int dy = Math.Abs(y1 - y0);
+
+    // 決定前進的方向（正向或負向）
+    int sx = x0 < x1 ? 1 : -1;
+    int sy = y0 < y1 ? 1 : -1;
+
+    int err = dx - dy;
+
+    while (true)
+    {
+        // 記錄當前點
+        points.Add(new Point(x0, y0));
+
+        // 如果已經到達終點，則結束
+        if (x0 == x1 && y0 == y1)
+            break;
+
+        int e2 = 2 * err;
+
+        if (e2 > -dy)
+        {
+            err -= dy;
+            x0 += sx;
+        }
+
+        if (e2 < dx)
+        {
+            err += dx;
+            y0 += sy;
+        }
+    }	
+    // draw the line:
+    using (Graphics g = control.CreateGraphics())
+    {
+        foreach (Point p in points)
+        {
+            g.FillRectangle(brush, p.X, p.Y, 1, 1);
+        }
+    }
+}
+</pre>
+<a href="#top">go to top</a>
+
+<pre id="drawLine_2">
+// <span class="blue">draw a line using a bitmap content.</span>
+public void drawLine(Control control, Bitmap bmp, int x0, int y0, int x1, int y1)
+{
+    List&lt;Point> points = new List&lt;Point>();
+
+    int dx = Math.Abs(x1 - x0);
+    int dy = Math.Abs(y1 - y0);
+
+    // 決定前進的方向（正向或負向）
+    int sx = x0 < x1 ? 1 : -1;
+    int sy = y0 < y1 ? 1 : -1;
+
+    int err = dx - dy;
+
+    while (true)
+    {
+        // 記錄當前點
+        points.Add(new Point(x0, y0));
+
+        // 如果已經到達終點，則結束
+        if (x0 == x1 && y0 == y1)
+            break;
+
+        int e2 = 2 * err;
+
+        if (e2 > -dy)
+        {
+            err -= dy;
+            x0 += sx;
+        }
+
+        if (e2 < dx)
+        {
+            err += dx;
+            y0 += sy;
+        }
+    }	
+    // draw the line:
+    using (Graphics g = control.CreateGraphics())
+    {
+        foreach (Point pt in points)
+        {
+            int bx = pt.X % bmp.Width;
+            int by = pt.Y % bmp.Height;
+
+            g.FillRectangle(new SolidBrush(bmp.GetPixel(bx, by)), pt.X, pt.Y, 1, 1);
+        }
+    }
+}
+</pre>
+<a href="#top">go to top</a>
+
+<pre id="drawCircle">
+//----------------------------------------------------------------------------------
+// <span class="blue">The Bresenham's algorithm for drawing a circle from AI,</span>
+
+public class BresenhamCircle
+{
+    // 定義一個委派，用於將座標繪製到螢幕上（可對接 WinForms 的 Graphics.FillRectangle 或點陣圖等）
+    <span class="tomato">public delegate void PlotPixel(int x, int y);  // like the function pointer</span>
+
+    /// 使用 Bresenham/中點演算法繪製圓形
+    /// <param name="xc">圓心 X 座標</param>
+    /// <param name="yc">圓心 Y 座標</param>
+    /// <param name="r">圓的半徑</param>
+    /// <param name="plot">自訂的畫點方法</param>
+    
+    public static void DrawCircle(int xc, int yc, int r, PlotPixel plot)
+    {
+        int x = 0;
+        int y = r;
+        int p = 3 - 2 * r; // 決策變數初始值
+
+        // 繪製初始八對稱點
+        PlotEightSymmetricPoints(xc, yc, x, y, plot);
+
+        // 核心迴圈：只計算 0° 到 45° 的弧（當 x 增加到 y 停止）
+        while (x < y)
+        {
+            x++;
+
+            if (p < 0)
+            {
+                // 下一個點在目前點的東側（水平移動）
+                p = p + 4 * x + 6;
+            }
+            else
+            {
+                // 下一個點在目前點的東南側（斜向移動）
+                y--;
+                p = p + 4 * (x - y) + 10;
+            }
+
+            // 利用對稱性畫出其餘 7 個對稱點
+            PlotEightSymmetricPoints(xc, yc, x, y, plot);
+        }
+    }
+
+    /// 利用圓的八分對稱性，將圓心平移後畫出 8 個像素點
+    private static void PlotEightSymmetricPoints(int xc, int yc, int x, int y, PlotPixel plot)
+    {
+        plot(xc + x, yc + y);
+        plot(xc - x, yc + y);
+        plot(xc + x, yc - y);
+        plot(xc - x, yc - y);
+        plot(xc + y, yc + x);
+        plot(xc - y, yc + x);
+        plot(xc + y, yc - x);
+        plot(xc - y, yc - x);
+    }
+}
+</pre>
+<a href="#top">go to top</a>
+
+<pre id="usingClass">
+//---------------------------------------------------------------------------------------------
+// <span class="blue">在 Paint 事件中，使用 class BresenhamCircle 來畫圓的程式碼:</span>
+private void Form1_Paint(object sender, PaintEventArgs e)
+{
+    using (Brush brush = new SolidBrush(Color.Black))
+    {
+        BresenhamCircle.DrawCircle(50, 50, 30, (x, y) => {
+            e.Graphics.FillRectangle(brush, x, y, 1, 1); // 畫一個 1x1 像素的矩形，比畫線的方法快！
+        });
+    }
+}
+//---------------------------------------------------------------------------------------------
+</pre>
+<a href="#top">go to top</a>
+<hr>
+<pre id="floodFill">
+// <span class="blue">實現在 bitmap 上，對以 targetColor 圍住區域進行填色的函式:</span>
+public void FloodFillStackQueue(Bitmap bmp, Point startPoint, Color fillColor, Color targetColor)
+{
+    // 1. 取得起始點的原始顏色
+    //Color targetColor = bmp.GetPixel(startPoint.X, startPoint.Y);
+
+    // 2. 如果新舊顏色相同，則不需要重複填色，直接結束
+    if (targetColor.ToArgb() == fillColor.ToArgb()) return;
+
+    // 3. 建立一個明確的 Stack 來儲存待處理的像素點
+    Queue&lt;Point> pixels = new Queue&lt;Point>();
+    pixels.Enqueue(startPoint);
+
+    // 4. 開始迴圈直到 Stack 裡面沒有像素為止
+    while (pixels.Count > 0)
+    {
+        Point current = pixels.Dequeue();
+        int x = current.X;
+        int y = current.Y;
+
+        // 5. 檢查當前像素是否超出圖形邊界
+        if (x < 0 || x >= bmp.Width || y < 0 || y >= bmp.Height) continue;
+
+        // 6. 檢查當前像素顏色是否與目標原始顏色一致
+        if (bmp.GetPixel(x, y).ToArgb() != fillColor.ToArgb() && bmp.GetPixel(x, y).ToArgb() != targetColor.ToArgb())
+        {
+            // 7. 變更當前像素的顏色
+            bmp.SetPixel(x, y, fillColor);
+
+            // 8. 將相鄰的四個方向（4-連通）推入 Queue 中待處理
+            pixels.Enqueue(new Point(x + 1, y));     // 右
+            pixels.Enqueue(new Point(x - 1, y));     // 左
+            pixels.Enqueue(new Point(x, y + 1));     // 下
+            pixels.Enqueue(new Point(x, y - 1));     // 上
+        }
+    }
+}
+</pre>
+<a href="#top">go to top</a>
+<hr>
+</body>
+</html>

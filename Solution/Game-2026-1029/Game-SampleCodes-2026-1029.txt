@@ -1,0 +1,85 @@
+(*)For Form,
+
+Bitmap bitmap = Properties.Resources.sunset_with_snoopy;
+Bitmap bgBmp;
+
+public Form1()
+{
+    InitializeComponent();
+
+    bgBmp = new Bitmap(panel1.Width, panel1.Height);
+
+    resetPanel();
+}
+
+void resetPanel()
+{
+    Random rand = new Random();
+    int side = 100;
+
+    using (Graphics g = Graphics.FromImage(bgBmp))
+    {
+        g.Clear(panel1.BackColor);
+		
+        for (int k = 0; k < 10; k++)
+        {
+            int px = rand.Next(10, panel1.Width - side);
+            int py = rand.Next(menuStrip1.Height + 10, panel1.Height - side);
+            if (k % 2 == 0)
+            {
+                g.DrawEllipse(Pens.Black, px, py, side, side);
+            }
+            else
+            {
+                g.DrawRectangle(Pens.Black, px, py, side, side);
+            }
+        }
+    }
+}
+//------------------------------------------------------------------------------
+
+(*) Panel event,
+private void panel1_MouseClick(object sender, MouseEventArgs e)
+{
+    //FloodFillStackQueue(Bitmap bmp, Point startPoint, Color fillColor, Color targetColor)
+    FloodFillStackQueue(bgBmp, new Point(e.X, e.Y), Color.Red, Color.Black);
+    using (Graphics g = panel1.CreateGraphics())
+    {
+        g.DrawImage(bgBmp, 0, 0);
+    }
+}
+//------------------------------------------------------------------------------
+
+(*) for main menu
+
+private void checkToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    int x0 = 0;
+    int y0 = 0;
+    int x1 = 300;
+    int y1 = 300;
+
+    for (int x = 0; x < 100; x++)
+    {
+        //* usage 1: with color,
+        drawLine(this, Color.Red, x0 + x, y0, x1 + x, y1);
+        drawLine(panel1, Color.Blue, x0 + x, y0, x1 + x, y1);
+        //*/
+
+        /* usage 2: with bitmap,
+        drawLine(this, bitmap, x0+x, y0, x1+x, y1);
+        drawLine(panel1, bitmap, x0+x, y0, x1+x, y1);
+        //*/
+    }
+}
+
+private void resetToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    resetPanel();
+
+    using (Graphics g = panel1.CreateGraphics())
+    {
+        g.DrawImage(bgBmp, 0, 0);
+    }
+}
+//------------------------------------------------------------------------------

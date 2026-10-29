@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DragPictureBoxes/DragPictureBoxes.csproj" />
+  <Project Path="ShowBitmap/ShowBitmap.csproj" />
+  <Project Path="UsePictureBox/UsePictureBox.csproj" />
+</Solution>

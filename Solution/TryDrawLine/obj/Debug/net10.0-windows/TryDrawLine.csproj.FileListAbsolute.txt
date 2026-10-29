@@ -1,0 +1,17 @@
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\bin\Debug\net10.0-windows\TryDrawLine.exe
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\bin\Debug\net10.0-windows\TryDrawLine.deps.json
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\bin\Debug\net10.0-windows\TryDrawLine.runtimeconfig.json
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\bin\Debug\net10.0-windows\TryDrawLine.dll
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\bin\Debug\net10.0-windows\TryDrawLine.pdb
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.Form1.resources
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.csproj.GenerateResource.cache
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.AssemblyInfoInputs.cache
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.AssemblyInfo.cs
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.csproj.CoreCompileInputs.cache
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.dll
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\refint\TryDrawLine.dll
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.pdb
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.genruntimeconfig.cache
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\ref\TryDrawLine.dll
+C:\Users\ntutcsie\source\repos\Solution\TryDrawLine\obj\Debug\net10.0-windows\TryDrawLine.Properties.Resources.resources
